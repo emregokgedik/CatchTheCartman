@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PlayActivity">
+
+    <TextView
+        android:id="@+id/scoreText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="152dp"
+        android:layout_marginTop="56dp"
+        android:text="SCORE: 0"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.gridlayout.widget.GridLayout
+        android:id="@+id/gridLayout2"
+        android:layout_width="401dp"
+        android:layout_height="238dp"
+        android:layout_marginTop="64dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scoreText">
+
+        <ImageView
+            android:id="@+id/cartman1"
+            android:layout_width="100dp"
+            android:layout_height="120dp"
+            android:onClick="cartmanClick"
+            app:layout_column="0"
+            app:layout_row="0"
+            app:srcCompat="@drawable/cartman" />
+
+        <ImageView
+            android:id="@+id/cartman2"
+            android:layout_width="100dp"
+            android:layout_height="120dp"
+            android:onClick="cartmanClick"
+            app:layout_column="1"
+            app:layout_row="0"
+            app:srcCompat="@drawable/cartman" />
+
+        <ImageView
+            android:id="@+id/cartman3"
+            android:layout_width="100dp"
+            android:layout_height="120dp"
+            android:onClick="cartmanClick"
+            app:layout_column="2"
+            app:layout_row="0"
+            app:srcCompat="@drawable/cartman" />
+
+        <ImageView
+            android:id="@+id/cartman4"
+            android:layout_width="100dp"
+            android:layout_height="120dp"
+            android:onClick="cartmanClick"
+            app:layout_column="3"
+            app:layout_row="0"
+            app:srcCompat="@drawable/cartman" />
+
+        <ImageView
+            android:id="@+id/cartman5"
+            android:layout_width="100dp"
+            android:layout_height="120dp"
+            android:onClick="cartmanClick"
+            app:layout_column="0"
+            app:layout_row="1"
+            app:srcCompat="@drawable/cartman" />
+
+        <ImageView
+            android:id="@+id/cartman6"
+            android:layout_width="100dp"
+            android:layout_height="120dp"
+            android:onClick="cartmanClick"
+            app:layout_column="1"
+            app:layout_row="1"
+            app:srcCompat="@drawable/cartman" />
+
+        <ImageView
+            android:id="@+id/cartman7"
+            android:layout_width="100dp"
+            android:layout_height="120dp"
+            android:onClick="cartmanClick"
+            app:layout_column="2"
+            app:layout_row="1"
+            app:srcCompat="@drawable/cartman" />
+
+        <ImageView
+            android:id="@+id/cartman8"
+            android:layout_width="100dp"
+            android:layout_height="120dp"
+            android:onClick="cartmanClick"
+            app:layout_column="3"
+            app:layout_row="1"
+            app:srcCompat="@drawable/cartman" />
+
+
+
+        <ImageView
+            android:id="@+id/kenny1"
+            android:layout_width="100dp"
+            android:layout_height="120dp"
+            android:onClick="kennyClick"
+            app:layout_column="0"
+            app:layout_row="0"
+            app:srcCompat="@drawable/kenny" />
+
+        <ImageView
+            android:id="@+id/kenny2"
+            android:layout_width="100dp"
+            android:layout_height="120dp"
+            android:onClick="kennyClick"
+            app:layout_column="1"
+            app:layout_row="0"
+            app:srcCompat="@drawable/kenny" />
+
+        <ImageView
+            android:id="@+id/kenny3"
+            android:layout_width="100dp"
+            android:layout_height="120dp"
+            android:onClick="kennyClick"
+            app:layout_column="2"
+            app:layout_row="0"
+            app:srcCompat="@drawable/kenny" />
+
+        <ImageView
+            android:id="@+id/kenny4"
+            android:layout_width="100dp"
+            android:layout_height="120dp"
+            android:onClick="kennyClick"
+            app:layout_column="3"
+            app:layout_row="0"
+            app:srcCompat="@drawable/kenny" />
+
+        <ImageView
+            android:id="@+id/kenny5"
+            android:layout_width="100dp"
+            android:layout_height="120dp"
+            android:onClick="kennyClick"
+            app:layout_column="0"
+            app:layout_row="1"
+            app:srcCompat="@drawable/kenny" />
+
+        <ImageView
+            android:id="@+id/kenny6"
+            android:layout_width="100dp"
+            android:layout_height="120dp"
+            android:onClick="kennyClick"
+            app:layout_column="1"
+            app:layout_row="1"
+            app:srcCompat="@drawable/kenny" />
+
+        <ImageView
+            android:id="@+id/kenny7"
+            android:layout_width="100dp"
+            android:layout_height="120dp"
+            android:onClick="kennyClick"
+            app:layout_column="2"
+            app:layout_row="1"
+            app:srcCompat="@drawable/kenny" />
+
+        <ImageView
+            android:id="@+id/kenny8"
+            android:layout_width="100dp"
+            android:layout_height="120dp"
+            android:onClick="kennyClick"
+            app:layout_column="3"
+            app:layout_row="1"
+            app:srcCompat="@drawable/kenny" />
+
+    </androidx.gridlayout.widget.GridLayout>
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="76dp"
+        android:onClick="restart"
+        android:text="restart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gridLayout2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
